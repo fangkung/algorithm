@@ -1,4 +1,6 @@
-package com.bporamin;
+package com.bporamin.sort;
+
+import com.bporamin.Common;
 
 /**
  * Created by FanG on 3/14/2017.

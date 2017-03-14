@@ -1,4 +1,4 @@
-package com.bporamin;
+package com.bporamin.search;
 
 /**
  * Created by Fang on 3/13/2017.
