@@ -9,7 +9,7 @@ public class SelectionSort {
 
     public static void main(String[] args) {
 
-        int[] data = {20, 15, 12, 30, -5, 72, 34, 9, 456, 999};
+        int[] data = {20, 15, 12, 30, -5, 72, 34, 9, 456, 999, 1};
         System.out.println("Before Sort");
         Common.show(data);
         System.out.println("After Sort");
@@ -19,9 +19,9 @@ public class SelectionSort {
 
     public static int[] selectionSort(int[] data) {
 
-        for (int index = 0; index < data.length - 1; index++) {
+        for (int index = 0; index < data.length; index++) {
             int minimum = index;
-            for (int unSort = (index + 1); unSort < data.length - 1; unSort++) {
+            for (int unSort = (index + 1); unSort < data.length; unSort++) {
                 if (data[unSort] < data[minimum])
                     minimum = unSort;
             }

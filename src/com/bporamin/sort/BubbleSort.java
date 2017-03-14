@@ -9,7 +9,7 @@ public class BubbleSort {
 
     public static void main(String[] args) {
 
-        int[] data = {20, 15, 12, 30, -5, 72, 456};
+        int[] data = {20, 15, 12, 30, -5, 72, 456, 1};
         System.out.println("Before Sort");
         Common.show(data);
         System.out.println("After Sort");
