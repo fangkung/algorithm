@@ -1,7 +1,7 @@
 package com.bporamin.data;
 
 /**
- * Created by K450J on 3/14/2017.
+ * Created by FanG on 3/14/2017.
  */
 public class Node<T> implements Comparable<T> {
 
