@@ -12,13 +12,20 @@ public class Common {
     }
 
     public static void show(int[] data) {
-        System.out.print(" data = {");
+        System.out.print("Numbers = {");
         for (int index = 0; index < data.length; index++) {
             System.out.print(data[index]);
             if (data.length - 1 > index)
                 System.out.print(",");
         }
         System.out.println("}");
+    }
+
+    public static void printNumbers(int[] numbers) {
+        System.out.print("Numbers: ");
+        for (int index = 0; index < numbers.length; index++) {
+            System.out.print(numbers[index] + ", ");
+        }
     }
 
 }
