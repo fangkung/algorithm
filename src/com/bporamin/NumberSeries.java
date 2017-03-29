@@ -10,6 +10,10 @@ public class NumberSeries {
         series01(numbers01);
         int[] numbers02 = {2, 3, 5, 7, 11, 13, 17, 19};
         series02(numbers02);
+        int[] numbers03 = {1, 3, 6, 10, 15};
+        series03(numbers03);
+        int[] numbers04 = {500, 475, 425, 350, 250};
+        series04(numbers04);
     }
 
     public static void series01(int[] numbers) {
@@ -45,6 +49,38 @@ public class NumberSeries {
                 return false;
         }
         return true;
+    }
+
+    public static void series03(int[] numbers) {
+        System.out.println("The differences between two consecutive numbers are 2, 3, 4, 5, 6, ... ");
+        Common.printNumbers(numbers);
+        System.out.println("... next number is " + sequenceIncrease(numbers.length + 1));
+        for (int i = 1; i <= 10; i++) {
+            System.out.print(sequenceIncrease(i) + ",");
+        }
+    }
+
+    public static int sequenceIncrease(int n) {
+        if (n == 1)
+            return 1;
+        else
+            return sequenceIncrease(n - 1) + n;
+    }
+
+    public static void series04(int[] numbers) {
+        System.out.println("The differences between two consecutive numbers are 25, 50, 75, 100, 125, ... ");
+        Common.printNumbers(numbers);
+        System.out.print("... number is 500,");
+        for (int i = 1; i <= 10; i++) {
+            System.out.print(decreaseMultiply(25, i) + ",");
+        }
+    }
+
+    public static int decreaseMultiply(int multiply, int n) {
+        if (n == 1)
+            return 500 - multiply * n;
+        else
+            return 500 - decreaseMultiply(multiply, n - 1);
     }
 
 }
